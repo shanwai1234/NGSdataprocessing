@@ -13,3 +13,6 @@ Modified installation pipeline:
 > make install
 ```
 Determining the number of hidden factors, ```If no prior information on the magnitude of confounding effects is available, we recommend using 25% of the number of individuals contained in the study but no more than 100 factors```
+
+R2 mapping:
+http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/faq.html
