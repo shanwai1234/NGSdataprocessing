@@ -1,3 +1,16 @@
+MVP.Data(fileNum="Selected-102genos-Widiv-filtered-MAF01-Het01-prune.geno",          
+         filePhe="Selected-102genos-Widiv-filtered-MAF01-Het01-prune.pheno",
+          fileMap="Selected-102genos-Widiv-filtered-MAF01-Het01-prune.snp",
+          sep.num="\t",
+          sep.map="\t", 
+          sep.phe="\t",
+          fileKin=FALSE,
+          filePC=FALSE,
+          #priority="memory",
+          #maxLine=10000,
+          out="mvp.num"
+          )
+
 genotype <- attach.big.matrix("mvp.num.geno.desc")
 phenotype <- read.table("mvp.num.phe",head=TRUE)
 map <- read.table("mvp.num.geno.map" , head = TRUE)
