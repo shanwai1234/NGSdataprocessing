@@ -1,3 +1,4 @@
+#python ~/scripts/primary-transcript-extractor-fromgtf.py Zea_mays.B73_RefGen_v4.41.gtf > Zea_mays.B73_RefGen_v4.41.primary.gtf
 import sys
 import operator
 
@@ -45,4 +46,4 @@ for line in flist:
             if trans != sdict[gene]:continue
             print (line.strip())
 
-fh.close()            
+fh.close()
