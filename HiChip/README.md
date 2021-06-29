@@ -12,8 +12,9 @@ python ~/software/HiC-Pro/bin/utils/digest_genome.py -r dpnii -o Simulate_Mo17_d
 ```
 
 # dominant and additive genes
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004745#pgen.1004745.s006
-https://link.springer.com/article/10.1007/s00122-019-03489-9#Sec2
+>https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004745#pgen.1004745.s006
+>https://link.springer.com/article/10.1007/s00122-019-03489-9#Sec2
+>https://link.springer.com/article/10.1186/s12864-016-3296-8#Sec18
 
 # cis and trans gene regulation
-https://www.frontiersin.org/articles/10.3389/fpls.2020.00410/full
+>https://www.frontiersin.org/articles/10.3389/fpls.2020.00410/full
