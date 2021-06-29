@@ -10,3 +10,6 @@ Rscript ~/software/FitHiChIP/Imp_Scripts/DiffAnalysisHiChIP.r --AllLoopList B73H
 ```
 python ~/software/HiC-Pro/bin/utils/digest_genome.py -r dpnii -o Simulate_Mo17_dpnii.bed Zm-B73-REFERENCE-GRAMENE-4.0-LaiMo17SNP.fa
 ```
+
+# dominant and additive genes
+https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1004745#pgen.1004745.s006
