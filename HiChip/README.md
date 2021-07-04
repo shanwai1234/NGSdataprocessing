@@ -21,3 +21,4 @@ python ~/software/HiC-Pro/bin/utils/digest_genome.py -r dpnii -o Simulate_Mo17_d
 
 # cis and trans gene regulation
 >https://www.frontiersin.org/articles/10.3389/fpls.2020.00410/full
+>https://www.nature.com/articles/s41467-019-13386-w#Sec12
