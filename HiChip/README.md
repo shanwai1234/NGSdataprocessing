@@ -22,3 +22,10 @@ python ~/software/HiC-Pro/bin/utils/digest_genome.py -r dpnii -o Simulate_Mo17_d
 # cis and trans gene regulation
 >https://www.frontiersin.org/articles/10.3389/fpls.2020.00410/full
 >https://www.nature.com/articles/s41467-019-13386-w#Sec12
+
+# metaplot drawing in python
+```
+computeMatrix reference-point --referencePoint TSS -b 2000 -a 2000 -R ../Zea_mays.B73_RefGen_v4.41.Chr.simplify.generegion -S B73-H3K27ac-rmdups.bw --skipZeros -o B73-H3K27ac-rmdups.gz -p 6 --outFileSortedRegions B73-H3K27ac-rmdups.bed
+
+plotProfile -m B73-H3K27ac-rmdups.gz -out test.svg --perGroup --colors green --plotTitle "" --samplesLabel "test" --refPointLabel "TSS" -T "Test" -z ""
+```
