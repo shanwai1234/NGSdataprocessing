@@ -32,3 +32,6 @@ plotProfile -m B73-H3K27ac-rmdups.gz -out test.svg --perGroup --colors green --p
 
 # Plotting interaction matrix
 > https://nservant.github.io/HiC-Pro/UTILS.html
+```
+hicConvertFormat -m merged_5000.matrix --bedFileHicpro merged_5000_abs.bed --inputFormat hicpro --outputFormat cool -o matrix.cool
+```
