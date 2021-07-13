@@ -29,3 +29,6 @@ computeMatrix reference-point --referencePoint TSS -b 2000 -a 2000 -R ../Zea_may
 
 plotProfile -m B73-H3K27ac-rmdups.gz -out test.svg --perGroup --colors green --plotTitle "" --samplesLabel "test" --refPointLabel "TSS" -T "Test" -z ""
 ```
+
+# Plotting interaction matrix
+> https://nservant.github.io/HiC-Pro/UTILS.html
