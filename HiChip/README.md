@@ -17,7 +17,14 @@ python ~/software/HiC-Pro/bin/utils/digest_genome.py -r dpnii -o Simulate_Mo17_d
 >https://link.springer.com/article/10.1186/s12864-016-3296-8#Sec18
 >https://www.nature.com/articles/s41598-021-92938-x#Sec7
 > key important paper https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6356826/
-> https://genome.cshlp.org/content/22/12/2445.full#sec-1 similar approach as I used 
+> https://genome.cshlp.org/content/22/12/2445.full#sec-1 similar approach as I used
 
 # cis and trans gene regulation
 >https://www.frontiersin.org/articles/10.3389/fpls.2020.00410/full
+
+# HiChIP plotting
+```
+hicConvertFormat -m merged_5000.matrix --bedFileHicpro merged_5000_abs.bed --inputFormat hicpro --outputFormat cool -o matrix.cool
+
+hicConvertFormat -m matrix.cool --inputFormat cool --outputFormat h5 -o matrix.h5
+```
