@@ -37,7 +37,7 @@ hicConvertFormat -m merged_5000.matrix --bedFileHicpro merged_5000_abs.bed --inp
 
 hicConvertFormat -m matrix.cool --inputFormat cool --outputFormat h5 -o matrix.h5
 
-hicCorrectMatrix diagnostic_plot -m B73-to-B73-H3K4me3-HiCPro.h5 --region Chr6:22483501-25398000 -o test.png
+hicCorrectMatrix diagnostic_plot -m B73-to-B73-H3K4me3-HiCPro.h5 -o mytest.png
 
 hicPlotMatrix -m B73-to-B73-H3K4me3-HiCPro.h5 --region Chr6:22483501-25398000 -o B73-to-B73-H3K4me3-PAV.svg --vMax 30 --colorMap "RdYlBu"
 ```
