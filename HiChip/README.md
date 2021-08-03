@@ -41,4 +41,6 @@ hicConvertFormat -m matrix.cool --inputFormat cool --outputFormat h5 -o matrix.h
 hicCorrectMatrix diagnostic_plot -m B73-to-B73-H3K4me3-HiCPro.h5 -o mytest.png
 
 hicPlotMatrix -m B73-to-B73-H3K4me3-HiCPro.h5 --region Chr6:22483501-25398000 -o B73-to-B73-H3K4me3-PAV.svg --vMax 30 --colorMap "RdYlBu"
+
+hicNormalize -m B73-to-B73-H3K4me3-HiCPro.h5 Mo17-to-SimuMo17-H3K4me3-HiPro.h5 --normalize smallest -o B73-to-B73-H3K4me3-HiCPro-normtoSimuMo17.h5 Mo17-to-SimuMo17-H3K4me3-HiPro-normtoB73.h5
 ```
