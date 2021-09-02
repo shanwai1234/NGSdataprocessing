@@ -44,3 +44,8 @@ hicPlotMatrix -m B73-to-B73-H3K4me3-HiCPro.h5 --region Chr6:22483501-25398000 -o
 
 hicNormalize -m B73-to-B73-H3K4me3-HiCPro.h5 Mo17-to-SimuMo17-H3K4me3-HiPro.h5 --normalize smallest -o B73-to-B73-H3K4me3-HiCPro-normtoSimuMo17.h5 Mo17-to-SimuMo17-H3K4me3-HiPro-normtoB73.h5
 ```
+# 4C-seq running
+
+> generating the fragment end libraries of the reference genome using the code ```4Cker.sh```
+> building index using bowtie2
+> producing results using ```pipe4C```
