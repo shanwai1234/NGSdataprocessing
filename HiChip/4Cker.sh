@@ -5,7 +5,7 @@
 #SBATCH --job-name=B73v4
 #SBATCH --error=B73v4.err
 #SBATCH --output=B73v4.out
-
+# sbatch reduced_genome_modified.sh dpnii B73v4 100
 enzyme=$1
 genome=$2
 fl=$3 # 150-50 = 100
