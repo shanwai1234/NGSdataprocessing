@@ -49,3 +49,8 @@ hicNormalize -m B73-to-B73-H3K4me3-HiCPro.h5 Mo17-to-SimuMo17-H3K4me3-HiPro.h5 -
 > generating the fragment end libraries of the reference genome using the code ```4Cker.sh```
 > building index using bowtie2
 > producing results using ```pipe4C```
+
+collapsing overlapping regions for visualization
+```
+bedtools merge -i B4C11_aligned_rm_self_und.normalize.sort.bedGraph -c 4 -o max
+```
