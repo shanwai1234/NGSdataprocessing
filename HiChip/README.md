@@ -54,3 +54,11 @@ collapsing overlapping regions for visualization
 ```
 bedtools merge -i B4C11_aligned_rm_self_und.normalize.sort.bedGraph -c 4 -o max
 ```
+
+# 4C-ker details
+
+```
+> library(R.4Cker)
+> enz_file=read.table("~/genomeinfo/4Cker-index/reduced_genome/R.4Cker/B73v4_dpnii_flanking_sites_125_unique_2.bed", stringsAsFactors = FALSE)
+> my_obj = createR4CkerObjectFromFiles(files="./B4C13_aligned.bedGraph",bait_chr="Chr7",bait_coord=176070000,bait_name="exp4-1",primary="GATC",samples="exp4-1",conditions="control",replicates=1,species="maize",output_dir="example4",enz_file=enz_file)
+```
