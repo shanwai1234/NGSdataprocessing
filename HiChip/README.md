@@ -62,3 +62,48 @@ bedtools merge -i B4C11_aligned_rm_self_und.normalize.sort.bedGraph -c 4 -o max
 > enz_file=read.table("~/genomeinfo/4Cker-index/reduced_genome/R.4Cker/B73v4_dpnii_flanking_sites_125_unique_2.bed", stringsAsFactors = FALSE)
 > my_obj = createR4CkerObjectFromFiles(files="./B4C13_aligned.bedGraph",bait_chr="Chr7",bait_coord=176070000,bait_name="exp4-1",primary="GATC",samples="exp4-1",conditions="control",replicates=1,species="maize",output_dir="example4",enz_file=enz_file)
 ```
+
+# build BSgenome
+```
+suppressWarnings(suppressMessages(library("BSgenome")))         # for BSgenome
+suppressWarnings(suppressMessages(library("devtools")))         # for build()
+
+
+BSseed <- list(
+  Package           = "BSgenome.Zmays.EnsemblPlants.AGPv4r45"
+  , Title             = "Zea mays (EnsemblPlants AGPv4 release 45)"
+  , Description       = "Zea mays full genome as provided by EnsemblPlants (AGPv4, release 32)"
+  , Version           = "1.0"
+  , organism          = "Zea mays"
+  , common_name       = "maize"
+  , provider          = "EnsemblPlants"
+  , provider_version  = "4.45"
+  , release_date      = "Feb 2017"
+  , release_name      = "Maize Genome Sequencing B34 4"
+  , source_url        = "ftp://ftp.ensemblgenomes.org/pub/release-45/plants/fasta/zea_mays/dna/"
+  , organism_biocview = "zmays"
+  , seqnames          =  "c('chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10', 'chrPt', 'chrMt')"
+  , circ_seqs         = "c('chrMt','chrPt')"
+  , BSgenomeObjname   = "zmays"
+)
+#make sure there is not a previous version of this package
+unlink(BSseed$Package, recursive = TRUE)
+
+#forge
+BSgenome::forgeBSgenomeDataPkg( BSseed
+                                , seqs_srcdir = UCSCF
+                                , destdir = "."
+                                , verbose = TRUE)
+
+Build the BSgenome package
+
+fn <- paste0(BSseed$Package, "_", BSseed$Version, ".tar.gz");
+if (!file.exists(fn)) {
+  fn <- devtools::build(BSseed$Package);
+  message("BSgenome package file ",BSseed$Package," created.")
+} else {
+  message("File ", fn," already exists.")
+}
+
+devtools::check(BSseed$Package);
+```
