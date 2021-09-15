@@ -80,7 +80,8 @@ BSseed <- list(
   release_date      = "Feb 2017",
   release_name      = "Maize Genome Sequencing B73v4", source_url        = "ftp://ftp.ensemblgenomes.org/pub/release-45/plants/fasta/zea_mays/dna/",
   organism_biocview = "zmays",
-  seqnames          =  "c('chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10')",
+  seqnames          =  "c('chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10','Pt')",
+  circ_seqs         =  "Pt",
   BSgenomeObjname   = "zmays"
 )
 #make sure there is not a previous version of this package
