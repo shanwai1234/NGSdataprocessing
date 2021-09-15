@@ -70,21 +70,19 @@ suppressWarnings(suppressMessages(library("devtools")))         # for build()
 
 
 BSseed <- list(
-  Package           = "BSgenome.Zmays.EnsemblPlants.AGPv4r45"
-  , Title             = "Zea mays (EnsemblPlants AGPv4 release 45)"
-  , Description       = "Zea mays full genome as provided by EnsemblPlants (AGPv4, release 32)"
-  , Version           = "1.0"
-  , organism          = "Zea mays"
-  , common_name       = "maize"
-  , provider          = "EnsemblPlants"
-  , provider_version  = "4.45"
-  , release_date      = "Feb 2017"
-  , release_name      = "Maize Genome Sequencing B34 4"
-  , source_url        = "ftp://ftp.ensemblgenomes.org/pub/release-45/plants/fasta/zea_mays/dna/"
-  , organism_biocview = "zmays"
-  , seqnames          =  "c('chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10', 'chrPt', 'chrMt')"
-  , circ_seqs         = "c('chrMt','chrPt')"
-  , BSgenomeObjname   = "zmays"
+  Package = "BSgenome.Zmays.EnsemblPlants.AGPv4r45",
+  Title = "Zea mays (EnsemblPlants AGPv4 release 45)", Description = "Zea mays full genome as provided by EnsemblPlants (AGPv4, release 32)",
+  Version           = "1.0",
+  organism          = "Zea mays",
+  common_name       = "maize",
+  provider          = "EnsemblPlants",
+  provider_version  = "4.45",
+  release_date      = "Feb 2017",
+  release_name      = "Maize Genome Sequencing B73v4", source_url        = "ftp://ftp.ensemblgenomes.org/pub/release-45/plants/fasta/zea_mays/dna/",
+  organism_biocview = "zmays",
+  seqnames          =  "c('chr1', 'chr2', 'chr3', 'chr4', 'chr5', 'chr6', 'chr7', 'chr8', 'chr9', 'chr10', 'chrPt', 'chrMt')",
+  circ_seqs         = "c('chrMt','chrPt')",
+  BSgenomeObjname   = "zmays"
 )
 #make sure there is not a previous version of this package
 unlink(BSseed$Package, recursive = TRUE)
