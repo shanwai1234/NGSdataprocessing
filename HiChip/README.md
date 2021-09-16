@@ -89,7 +89,8 @@ unlink(BSseed$Package, recursive = TRUE)
 
 #forge
 BSgenome::forgeBSgenomeDataPkg(BSseed,
-                               seqs_srcdir = seqs_srcdir, destdir = ".",
+                               seqs_srcdir = test,
+                               destdir = ".",
                                verbose = TRUE)
 
 Build the BSgenome package
