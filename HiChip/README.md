@@ -68,7 +68,6 @@ bedtools merge -i B4C11_aligned_rm_self_und.normalize.sort.bedGraph -c 4 -o max
 suppressWarnings(suppressMessages(library("BSgenome")))         # for BSgenome
 suppressWarnings(suppressMessages(library("devtools")))         # for build()
 
-
 BSseed <- list(
   Package = "BSgenome.Zmays.EnsemblPlants.AGPv4r45",
   Title = "Zea mays (EnsemblPlants AGPv4 release 45)", Description = "Zea mays full genome as provided by EnsemblPlants (AGPv4, release 32)",
