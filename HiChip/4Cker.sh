@@ -23,9 +23,9 @@ fl=$3 # 150-25 = 125 # dpnii is the primary enzyme
 #get coordinates for all RE sites in the genome
 oligoMatch ${enzyme}.fa ${genome}.fa ${genome}_${enzyme}_restriction_sites_oligomatch.bed
 #get coordinates of upstream fragments
-awk -v fl=$fl1 '{print $1"\t"$2-fl"\t"$2}' ${genome}_${enzyme}_restriction_sites_oligomatch.bed > ${genome}_up.txt
+awk -v fl=$fl '{print $1"\t"$2-fl"\t"$2}' ${genome}_${enzyme}_restriction_sites_oligomatch.bed > ${genome}_up.txt
 #get coordinates of downstream fragments
-awk -v fl=$fl2 '{print $1"\t"$3"\t"$3+fl}' ${genome}_${enzyme}_restriction_sites_oligomatch.bed > ${genome}_down.txt
+awk -v fl=$fl '{print $1"\t"$3"\t"$3+fl}' ${genome}_${enzyme}_restriction_sites_oligomatch.bed > ${genome}_down.txt
 #combine up and downstream fragments
 cat ${genome}_up.txt ${genome}_down.txt > ${genome}_${enzyme}_flanking_sites_${fl}_2.bed
 #remove any fragments with negative coordinates
