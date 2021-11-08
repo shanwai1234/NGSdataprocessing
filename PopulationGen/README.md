@@ -16,3 +16,5 @@ Determining the number of hidden factors, ```If no prior information on the magn
 
 R2 mapping:
 http://www.bios.unc.edu/research/genomic_software/Matrix_eQTL/faq.html
+
+## Estimating the effective number of variants
