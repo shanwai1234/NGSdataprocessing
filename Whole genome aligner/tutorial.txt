@@ -1,0 +1,13 @@
+1. using Mumer 4.0 for whole genome alignment. Remember the query genome could be split, but the target genome should be a whole;
+the command is as the right: nucmer -c 100 -p B73-Mo17-chr1 Zm-B73-REFERENCE-GRAMENE-4.0.fa Mo17-chromosomes/Mo17-chr1.fa"
+2. Using "delta-filter" function to filter best hit, orientation, identify and length of alignment: delta-filter -i 90 -l 1000 -r -q B73-Mo17-chr1.delta > B73-Mo17-chr1-i90l1000rq.delta
+3. Using "delta2maf" function in MUMER/3.20 to convert maf to delta format:
+~/software/MUMmer3.20/delta2maf B73-Mo17-scaffolds-i90l1000rq.delta > /scratch.global/liang795/B73-Mo17-scaffolds-i90l1000rq.maf;
+4. Using "maf-convert" function to convert maf to pal format:
+for i in {1..10};do maf-convert psl B73-Mo17-chr$i-i90l5000.maf > B73-Mo17-chr$i-i90l5000.psl;done
+5. for i in psl/*.psl; do echo $i; axtChain $i Zm-Mo17-REFERENCE-CAU-1.0.2bit Zm-B73-REFERENCE-GRAMENE-4.0.2bit chain/`basename $i .psl`.chain -linearGap=loose -psl; done
+6. chainMergeSort chain/*.chain > all.chain
+7. chainPreNet all.chain B73v4.sizes Mo17.sizes all.pre.chain
+8. chainNet all.pre.chain -minSpace=1 B73v4.sizes Mo17.sizes stdout /dev/null | netSyntenic stdin noClass.net
+9. netChainSubset noClass.net all.pre.chain final.chain
+ 
