@@ -5,4 +5,6 @@ tamoxifen <- dba.count(tamoxifen)
 tamoxifen1 <- dba.contrast(tamoxifen, categories=DBA_CONDITION, minMembers=2)
 tamoxifen2 <- dba.analyze(tamoxifen1)
 tamoxifen.DB <- dba.report(tamoxifen2)
+# summit determination
+# tamoxifen.DB <- dba.count(tamoxifen2, summits=TRUE, score=DBA_SCORE_SUMMITS_POS)
 write.table(tamoxifen.DB, file="test.txt")
