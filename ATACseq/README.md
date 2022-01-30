@@ -13,5 +13,5 @@ ComputeMatrix scale-regions -S /scratch.global/liang795/MOAseq/rmdupsbam/merged/
 > calling peaks using macs3 for MOAseq
 the ```extsize``` is estimated using "samtools stats *bam"
 ```
-macs3 callpeak -t Svm-C_STARAligned.max80.sortedByCoord.out.bam -g 3.96e8 -n SvmC -B -q 0.01 --nomodel --extsize 147
+macs3 callpeak -t Svm-C_STARAligned.max80.sortedByCoord.out.bam -g 3.96e8 -n SvmC -B -q 0.01 --nomodel --extsize 58
 ```
