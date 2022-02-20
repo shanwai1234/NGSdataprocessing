@@ -15,3 +15,7 @@ the ```extsize``` is estimated using "samtools stats *bam"
 ```
 macs3 callpeak -t Svm-C_STARAligned.max80.sortedByCoord.out.bam -g 3.96e8 -n SvmC -B -q 0.01 --nomodel --extsize 58
 ```
+> calculating the effective genome size
+```
+The script does: 1) samtools stats on the bam file to get the average fragment size, 2) we use "unique-kmers.py -q -k ${frg_length} -R ${eg_genome} ${Genome}" to get the mapable genome size. -k is the fragment length we get from samtools stats. -R is output. ${Genome} is the faidx of the genome fasta. We only take the first two columns of the faidx of the genome fasta.
+```
