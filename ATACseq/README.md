@@ -21,6 +21,10 @@ macs3 callpeak -t Svm-C_STARAligned.max80.sortedByCoord.out.bam -g 3.96e8 -n Svm
 ```
 # Commands for calling peaks of MOA-seq
 
+> Comparing difference between bigwig files
+```
+bigwigCompare -b1 B_H.q255.20.bp.rand.EG.bw -b2 B_C.q255.20.bp.rand.EG.bw --scaleFactors 1:1 -bs 20 -o B73_Diff_20bp.bedGraph -of bedgraph
+```
 > merged B-C
 ```
 macs3 callpeak -t B_C1_3.merged.max80.255.bam -g 1.24e9 --buffer-size 10000000 --keep-dup all -n B_C1_q001 -q 0.01 --nomodel --extsize 59 --min-length 59 --max-gap 118
