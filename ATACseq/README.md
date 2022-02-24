@@ -19,3 +19,9 @@ macs3 callpeak -t Svm-C_STARAligned.max80.sortedByCoord.out.bam -g 3.96e8 -n Svm
 ```
 1) samtools stats on the bam file to get the average fragment size, 2) "unique-kmers.py -q -k ${frg_length} -R ${eg_genome} ${Genome}" to get the mapable genome size. -k is the fragment length we get from samtools stats. -R is output. ${Genome} is the faidx of the genome fasta. Only take the first two columns of the faidx of the genome fasta.
 ```
+# Commands for calling peaks of MOA-seq
+
+> merged B-C
+```
+macs3 callpeak -t B_C1_3.merged.max80.255.bam -g 1.24e9 --buffer-size 10000000 --keep-dup all -n B_C1_q001 -q 0.01 --nomodel --extsize 59 --min-length 59 --max-gap 118
+```
