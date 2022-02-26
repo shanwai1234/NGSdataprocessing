@@ -29,3 +29,7 @@ bigwigCompare -b1 B_H.q255.20.bp.rand.EG.bw -b2 B_C.q255.20.bp.rand.EG.bw --scal
 ```
 macs3 callpeak -t B_C1_3.merged.max80.255.bam -g 1.24e9 --buffer-size 10000000 --keep-dup all -n B_C1_q001 -q 0.01 --nomodel --extsize 59 --min-length 59 --max-gap 118
 ```
+> Compared coverage files
+```
+bigwigCompare -b1 M_H.q255.20.bp.rand.EG.bw -b2 M_C.q255.20.bp.rand.EG.bw --scaleFactors 1:1 -bs 20 -o Mo17_Diff_20bp.bedGraph -of bedgraph
+```
