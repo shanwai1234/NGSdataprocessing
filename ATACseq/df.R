@@ -4,6 +4,7 @@ tamoxifen <- dba(sampleSheet=x)
 tamoxifen <- dba.count(tamoxifen)
 # summit determination
 # tamoxifen <- dba.count(tamoxifen, summits=40)
+# summits <- dba.peakset(myDBA, bRetrieve=TRUE)
 tamoxifen1 <- dba.contrast(tamoxifen, categories=DBA_CONDITION, minMembers=2)
 tamoxifen2 <- dba.analyze(tamoxifen1)
 tamoxifen.DB <- dba.report(tamoxifen2)
