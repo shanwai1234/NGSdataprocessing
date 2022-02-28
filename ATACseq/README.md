@@ -37,3 +37,7 @@ bigwigCompare -b1 M_H.q255.20.bp.rand.EG.bw -b2 M_C.q255.20.bp.rand.EG.bw --scal
 ```
 macs3 refinepeak -b B73-MAPQ255-diffpeaks.bed -i /scratch.global/liang795/MOAseqbam/ftp.mpipz.mpg.de/Nathan/BAM/merged/B_H1_3.merged.max80.255.bam -o B73-MAPQ255-diffpeaks-summits
 ```
+> peak annotation
+```
+annotatePeaks.pl B73-MAPQ255-diffpeaks.bed ~/genomeinfo/genome-fasta/Zm-B73-REFERENCE-GRAMENE-4.0-noChr.fa -gtf ~/genomeinfo/geneannotation/Zea_mays.B73_RefGen_v4.41.primary.noChr.gtf > B73-MAPQ255-diffpeaks-ann.bed
+```
