@@ -33,3 +33,7 @@ macs3 callpeak -t B_C1_3.merged.max80.255.bam -g 1.24e9 --buffer-size 10000000 -
 ```
 bigwigCompare -b1 M_H.q255.20.bp.rand.EG.bw -b2 M_C.q255.20.bp.rand.EG.bw --scaleFactors 1:1 -bs 20 -o Mo17_Diff_20bp.bedGraph -of bedgraph
 ```
+> redefining peak regions
+```
+macs3 refinepeak -b B73-MAPQ255-diffpeaks.bed -i /scratch.global/liang795/MOAseqbam/ftp.mpipz.mpg.de/Nathan/BAM/merged/B_H1_3.merged.max80.255.bam -o B73-MAPQ255-diffpeaks-summits
+```
