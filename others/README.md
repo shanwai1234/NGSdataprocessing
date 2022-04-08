@@ -8,4 +8,4 @@ http://jaspar.genereg.net/downloads/
 ### paired t-test in DESeq2
 > https://support.bioconductor.org/p/84241/
 
-### using lftp for data uploading
+### using lftp and mput for data uploading
