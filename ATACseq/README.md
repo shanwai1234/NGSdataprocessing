@@ -31,7 +31,7 @@ macs3 callpeak -t B_C1_3.merged.max80.255.bam -g 1.24e9 --buffer-size 10000000 -
 ```
 > peak calling for bed files
 ```
-callpeak -t B_C.q255.20.bp.rand.EG.bedGraph -n test --outdir tesetfolder -f BED -q 0.01 -g 1241792540 -s 20 --min-length 20 --max-gap 40 --nomodel --extsize 20 --keep-dup all --buffer-size 100000000
+macs3 callpeak -t B_C.q255.20.bp.rand.EG.bedGraph -n test --outdir tesetfolder -f BED -q 0.01 -g 1241792540 -s 20 --min-length 20 --max-gap 40 --nomodel --extsize 20 --keep-dup all --buffer-size 100000000
 ```
 > Compared coverage files
 ```
