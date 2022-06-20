@@ -9,7 +9,10 @@ ln -vs /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gn
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 37c4ca66dd3110a9cf403dc166693076c5c5aaf9
 =======
 >>>>>>> 37c4ca66dd3110a9cf403dc166693076c5c5aaf9
 =======
@@ -20,6 +23,9 @@ ComputeMatrix scale-regions -S /scratch.global/liang795/MOAseq/rmdupsbam/merged/
 ```
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 37c4ca66dd3110a9cf403dc166693076c5c5aaf9
+=======
 >>>>>>> 37c4ca66dd3110a9cf403dc166693076c5c5aaf9
 =======
 >>>>>>> 37c4ca66dd3110a9cf403dc166693076c5c5aaf9
